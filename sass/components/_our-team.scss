@@ -1,0 +1,77 @@
+.our-team {
+  background-color: var(--buttons-background);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  &__title {
+    display: block;
+    margin-top: 0px;
+    margin-bottom: 50px;
+  }
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px;
+    margin: 0px;
+    gap: 30px;
+  }
+  &__member {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 270px;
+    height: 428px;
+    background-color: var(--logo-footer);
+    box-shadow: 0 4px 4px var(--shadow-teamat);
+  }
+  &__name {
+    display: block;
+    width: 72px;
+    height: 19px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.172;
+  }
+  &__icon-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50px;
+    background-color: var(--logo-footer);
+    &:hover,
+    &:active {
+      background-color: var(--link-focus);
+      transition: var(--transition-active);
+    }
+    &:hover > svg {
+      fill: var(--logo-footer);
+      background-color: var(--link-focus);
+      transition: var(--transition-active);
+    }
+  }
+  &__specialization {
+    color: var(--signatures);
+    font-size: 16px;
+    line-height: 1.172;
+  }
+  &__icon {
+    fill: var(--clients-section__box);
+  }
+}
+
+.media-section {
+  display: block;
+  padding: 0px;
+  &__list {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding-top: 16px;
+  }
+}

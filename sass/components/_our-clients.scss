@@ -1,0 +1,37 @@
+.clients-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &__title {
+    margin-top: 0px;
+    margin-bottom: 50px;
+  }
+  &__item {
+    display: flex;
+    gap: 30px;
+  }
+  &__box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid var(--border-clients-section__box);
+    border-radius: 4px;
+    &:hover,
+    &:active {
+      border-color: var(--link-focus);
+      transition: var(--transition-active);
+    }
+    &:hover > svg,
+    &:focus > svg {
+      fill: var(--link-focus);
+      border-color: var(--link-focus);
+      transition: var(--transition-active);
+    }
+  }
+  &__logo {
+    fill: var(--clients-section__box);
+  }
+}
