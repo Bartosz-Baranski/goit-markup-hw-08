@@ -1,0 +1,106 @@
+.mobile-nav {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  max-width: 480px;
+  height: 100vh;
+  padding: 48px 40px;
+  background-color: var(--logo-footer);
+  transform: translateX(-100%);
+  transition: transform 250ms ease-in-out;
+  &__btn-open {
+    display: flex;
+    outline: none;
+    border: 0px;
+    background-color: var(--logo-footer);
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  &__icon-open:hover,
+  &__icon-open:focus {
+    fill: var(--link-focus);
+    cursor: pointer;
+  }
+  &__icon-close {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 21px;
+    right: 25px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    background-color: var(--logo-footer);
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+    cursor: pointer;
+    &:hover,
+    &:focus {
+      fill: var(--link-focus);
+      cursor: pointer;
+    }
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin-bottom: 302px;
+  }
+  &__link {
+    font-family: var(--main-font);
+    font-size: 40px;
+    line-height: 1.172;
+    font-weight: 500;
+    color: var(--main-color);
+    text-decoration: none;
+  }
+  &__contact {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin-bottom: 64px;
+  }
+  &__tel {
+    font-family: var(--main-font);
+    font-size: 34px;
+    line-height: 1.172;
+    font-weight: 500;
+    color: var(--link-focus);
+    text-decoration: none;
+  }
+  &__mail {
+    font-family: var(--main-font);
+    font-size: 24px;
+    line-height: 1.172;
+    font-weight: 500;
+    color: var(--contact-footer);
+    text-decoration: none;
+  }
+  &__media {
+    display: flex;
+    gap: 10px;
+  }
+  &__media-item:not(:last-child) {
+    border-right: 1px solid var(--border-form-modal);
+    padding-right: 10px;
+  }
+  &__media-link {
+    font-family: var(--main-font);
+    font-size: 18px;
+    line-height: 1.22;
+    font-weight: 500;
+    color: var(--link-focus);
+    text-decoration: none;
+  }
+}
+.mobile-nav.is-open {
+  transform: translateX(0);
+}

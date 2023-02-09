@@ -14,10 +14,13 @@ h2 {
   line-height: 1.172;
 }
 .container {
+  min-width: 320px;
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
   width: 1200px;
   margin: 0 auto;
   height: auto;
-  padding-left: 0px;
 }
 .section {
   padding-top: 94px;
