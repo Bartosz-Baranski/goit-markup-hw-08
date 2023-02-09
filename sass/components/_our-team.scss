@@ -2,16 +2,22 @@
   background-color: var(--buttons-background);
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
+  width: 480px;
+  margin: auto;
   text-align: center;
+  padding: 60px 0px;
   &__title {
     display: block;
+    font-size: 28px;
     margin-top: 0px;
     margin-bottom: 50px;
   }
   &__list {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    // justify-content: space-between;
     padding: 0px;
     margin: 0px;
     gap: 30px;
@@ -21,8 +27,8 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    width: 270px;
-    height: 428px;
+    width: 450px;
+    height: 622px;
     background-color: var(--logo-footer);
     box-shadow: 0 4px 4px var(--shadow-teamat);
   }
@@ -73,5 +79,24 @@
     justify-content: center;
     gap: 10px;
     padding-top: 16px;
+  }
+}
+@include tablet {
+  .our-team {
+    width: 768px;
+    &__box {
+      width: 768px;
+    }
+    &__list {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    &__member {
+      flex-basis: calc((100% - (1 * 30px)) / 2);
+      display: flex;
+      width: 354px;
+      height: 536px;
+    }
   }
 }

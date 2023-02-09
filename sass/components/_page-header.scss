@@ -1,7 +1,7 @@
 .page-header {
   display: flex;
-  height: 80px;
-  position: relative;
+  width: 480px;
+  height: 60px;
   justify-content: space-between;
   align-items: center;
   background-color: var(--logo-footer);
@@ -22,62 +22,141 @@
     color: var(--link-focus);
   }
 }
-.navigation-header {
-  display: flex;
-  flex: 1;
-  &__list {
+
+@include tablet {
+  .page-header {
     display: flex;
+    width: 767px;
+    height: 80px;
     justify-content: space-between;
     align-items: center;
-    gap: 46px;
-    margin-left: 93px;
   }
-  &__link {
-    font-size: 14px;
-    line-height: 1.172;
-    font-weight: 500;
-    text-decoration: none;
-    color: var(--main-text);
+  .navigation-header {
+    display: flex;
+    flex: 1;
+    &__list {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 46px;
+      margin-left: 93px;
+    }
+    &__link {
+      font-size: 14px;
+      line-height: 1.172;
+      font-weight: 500;
+      text-decoration: none;
+      color: var(--main-text);
+    }
+    &--underline-active {
+      position: relative;
+      &::after {
+        content: "";
+        background-color: var(--link-focus);
+        width: 53px;
+        height: 4px;
+        position: absolute;
+        top: 45px;
+        left: 0;
+      }
+    }
   }
-  &--underline-active {
-    position: relative;
-    &::after {
-      content: "";
-      background-color: var(--link-focus);
-      width: 53px;
-      height: 4px;
-      position: absolute;
-      top: 45px;
-      left: 0;
+  .contact-header {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    &__item {
+      color: var(--signatures);
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.172;
+      font-style: normal;
+      text-decoration: none;
+      &:hover > svg,
+      &:focus > svg {
+        fill: var(--link-focus);
+        transition: var(--transition-active);
+      }
+    }
+    &__icon {
+      fill: var(--signatures);
+      margin-right: 10px;
+      &:hover,
+      &:focus,
+      &:active {
+        fill: var(--link-focus);
+        transition: var(--transition-active);
+      }
     }
   }
 }
-.contact-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 50px;
-  &__item {
-    color: var(--signatures);
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.172;
-    font-style: normal;
-    text-decoration: none;
-    &:hover > svg,
-    &:focus > svg {
-      fill: var(--link-focus);
-      transition: var(--transition-active);
+@include desktop {
+  .page-header {
+    display: flex;
+    width: 1600px;
+    height: 80px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .navigation-header {
+    display: flex;
+    flex: 1;
+    &__list {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 46px;
+      margin-left: 93px;
+    }
+    &__link {
+      font-size: 14px;
+      line-height: 1.172;
+      font-weight: 500;
+      text-decoration: none;
+      color: var(--main-text);
+    }
+    &--underline-active {
+      position: relative;
+      &::after {
+        content: "";
+        background-color: var(--link-focus);
+        width: 53px;
+        height: 4px;
+        position: absolute;
+        top: 45px;
+        left: 0;
+      }
     }
   }
-  &__icon {
-    fill: var(--signatures);
-    margin-right: 10px;
-    &:hover,
-    &:focus,
-    &:active {
-      fill: var(--link-focus);
-      transition: var(--transition-active);
+  .contact-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    &__item {
+      color: var(--signatures);
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.172;
+      font-style: normal;
+      text-decoration: none;
+      &:hover > svg,
+      &:focus > svg {
+        fill: var(--link-focus);
+        transition: var(--transition-active);
+      }
+    }
+    &__icon {
+      fill: var(--signatures);
+      margin-right: 10px;
+      &:hover,
+      &:focus,
+      &:active {
+        fill: var(--link-focus);
+        transition: var(--transition-active);
+      }
     }
   }
 }
