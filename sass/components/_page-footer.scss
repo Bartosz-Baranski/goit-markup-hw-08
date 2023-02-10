@@ -1,28 +1,30 @@
 .page-footer {
   background-color: var(--baground);
   &__logo {
-    margin-top: 60px;
     margin-bottom: 20px;
     color: var(--logo-footer);
   }
   &__box {
     display: flex;
-    justify-content: flex-start;
+
     align-items: center;
-    gap: 70px;
+    gap: 60px;
+    padding: 60px 0px;
+    margin: 0 auto;
   }
 }
 .our-zone {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  align-items: center;
+
   &__legal-addres {
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: 246px;
     height: 81px;
     gap: 9px;
-    margin-bottom: 60px;
     color: var(--logo-footer);
     font-style: normal;
     font-size: 14px;
@@ -73,19 +75,21 @@
     line-height: 1.172;
     color: var(--logo-footer);
     margin: 0px;
+    text-align: center;
   }
 }
 
 .newsletter {
   display: flex;
   gap: 12px;
-  align-items: flex-end;
+  align-items: center;
   &__box {
     display: flex;
     flex-direction: column;
     gap: 20px;
   }
   &__label {
+    text-align: center;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.172;
@@ -140,6 +144,63 @@
       & .newsleter__btn--icon {
         transform: rotate(360deg);
       }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .page-footer {
+    &__box {
+      width: 480px;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+  .newsletter {
+    flex-direction: column;
+  }
+}
+@include tablet {
+  .page-footer {
+    &__box {
+      // display: flex;
+      width: 768px;
+    }
+    &__box:not(:last-child) {
+      display: flex;
+    }
+    &__item {
+      // flex-basis: calc((100% - (1 * 30px)) / 2);
+    }
+  }
+  .newsletter {
+    flex-direction: column;
+  }
+}
+@include desktop {
+  .page-footer {
+    &__logo {
+    }
+    &__box {
+      justify-content: flex-start;
+      align-items: center;
+      gap: 70px;
+      width: 1200px;
+    }
+  }
+  .our-zone {
+    justify-content: flex-start;
+    align-items: flex-start;
+    &__legal-addres {
+      align-items: flex-start;
+    }
+  }
+  .media-footer__title {
+    text-align: start;
+  }
+  .newsletter {
+    align-items: flex-end;
+    &__label {
+      text-align: start;
     }
   }
 }

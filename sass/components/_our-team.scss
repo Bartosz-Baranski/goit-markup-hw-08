@@ -4,7 +4,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 480px;
+  width: 100vw;
   margin: auto;
   text-align: center;
   padding: 60px 0px;
@@ -83,7 +83,7 @@
 }
 @include tablet {
   .our-team {
-    width: 768px;
+    width: 100vw;
     &__box {
       width: 768px;
     }
@@ -97,6 +97,24 @@
       display: flex;
       width: 354px;
       height: 536px;
+    }
+  }
+}
+@include desktop {
+  .our-team {
+    width: 100vw;
+    padding: 94px 0px;
+
+    &__box {
+      width: 1200px;
+    }
+    &__list {
+      display: flex;
+      flex-direction: row;
+    }
+    &__member {
+      width: 270px;
+      height: 428px;
     }
   }
 }

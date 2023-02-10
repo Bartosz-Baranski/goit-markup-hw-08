@@ -151,34 +151,59 @@
         <h2 class="our-work__title">Czym się zajmujemy</h2>
         <ul class="our-work__img">
           <li>
-            <img
-              src="./images/box1.jpg"
-              alt="Ktoś pisze kod html"
-              width="370"
-              height="294"
-            />
+            <picture
+              ><source
+                srcset="
+                  ./images/apipc1200x1.jpg 1200w,
+                  .images/apipc1200x2.jpg  2000w
+                "
+                media="(minwidth:1200px)"
+                sizes="(minwidth:2000px) 2000px, 100vw"
+              />
+
+              <img src="./images/apipc1200x1.jpg" alt="Ktoś pisze kod html" />
+            </picture>
+
             <figcaption class="our-work__figcaption">
               <h3 class="our-work__description">APLIKACJE KOMPUTEROWE</h3>
             </figcaption>
           </li>
           <li>
-            <img
-              src="./images/box2.jpg"
-              alt="Telefon i laptop z efektem pracy"
-              width="370"
-              height="294"
-            />
+            <picture
+              ><source
+                srcset="
+                  ./images/apiMobi1200x1.jpg 1200w,
+                  .images/apiMobi1200x2.jpg  2000w
+                "
+                media="(minwidth:1200px)"
+                sizes="(minwidth:2000px) 2000px, 100vw"
+              />
+
+              <img
+                src="./images/apiMobi1200x1.jpg"
+                alt="Telefon i laptop z efektem pracy"
+              />
+            </picture>
             <figcaption class="our-work__figcaption">
               <h3 class="our-work__description">APLIKACJE MOBILNE</h3>
             </figcaption>
           </li>
           <li>
-            <img
-              src="./images/box3.jpg"
-              alt="Edycja grafiki na tablecie"
-              width="370"
-              height="294"
-            />
+            <picture
+              ><source
+                srcset="
+                  ./images/graphicArt1200x1.jpg 1200w,
+                  .images/graphicArt1200x2.jpg  2000w
+                "
+                media="(minwidth:1200px)"
+                sizes="(minwidth:2000px) 2000px, 100vw"
+              />
+
+              <img
+                src="./images/graphicArt1200x1.jpg"
+                alt="Edycja grafiki na tablecie"
+              />
+            </picture>
             <figcaption class="our-work__figcaption">
               <h3 class="our-work__description">ROZWIĄZANIA GRAFICZNE</h3>
             </figcaption>
@@ -190,12 +215,37 @@
           <h2 class="our-team__title">Nasz zespół</h2>
           <ul class="our-team__list">
             <li class="our-team__member">
-              <img
-                src="./images/ProductDesigner.jpg"
-                alt="Zdjęcie osoby Product Designer"
-                width="270"
-                height="260"
-              />
+              <picture
+                ><source
+                  srcset="
+                    ./images/designer480x1.jpg 350w,
+                    ./images/designer480x2.jpg 480w
+                  "
+                  media="(minwidth:320px)"
+                  sizes="(minwidth:480px) 480px"
+                />
+                <source
+                  srcset="
+                    .images/designer768x1.jpg  768w,
+                    .images/designer768x2.jpg 1000w
+                  "
+                  media="(minwidth:768px)"
+                  sizes="(minwidth:1000px) 1000w"
+                />
+                <source
+                  srcset="
+                    .images/designer1200x1.jpg 1200w,
+                    .images/designer1200x2.jpg 2000w
+                  "
+                  media="(minwidth:1200px)"
+                  sizes="(minwidth:2000px) 2000px"
+                />
+
+                <img
+                  src="./images/designer1200x1.jpg"
+                  alt="Zdjęcie osoby Product Designer"
+                />
+              </picture>
               <h3 class="our-team__name">John Doe</h3>
               <ul class="media-section">
                 <li class="our-team__specialization">Product Designer</li>
@@ -226,12 +276,36 @@
               </ul>
             </li>
             <li class="our-team__member">
-              <img
-                src="./images/FrontendDeveloper.jpg"
-                alt="Zdjecie osoby Frontend Developer"
-                width="270"
-                height="260"
-              />
+              <picture
+                ><source
+                  srcset="
+                    ./images/developer480x1.jpg 350w,
+                    ./images/developer480x2.jpg 480w
+                  "
+                  media="(minwidth:320px)"
+                  sizes="(minwidth:480px) 480px"
+                />
+                <source
+                  srcset="
+                    .images/developer768x1.jpg  768w,
+                    .images/developer768x2.jpg 1000w
+                  "
+                  media="(minwidth:768px)"
+                  sizes="(minwidth:1000px) 1000w"
+                />
+                <source
+                  srcset="
+                    .images/developer1200x1.jpg 1200w,
+                    .images/developer1200x2.jpg 2000w
+                  "
+                  media="(minwidth:1200px)"
+                  sizes="(minwidth:2000px) 2000px"
+                />
+                <img
+                  src="./images/developer1200x1.jpg"
+                  alt="Zdjecie osoby Frontend Developer"
+                />
+              </picture>
               <h3 class="our-team__name">John Doe</h3>
               <ul class="media-section">
                 <li class="our-team__specialization">Frontend Developer</li>
@@ -262,12 +336,36 @@
               </ul>
             </li>
             <li class="our-team__member">
-              <img
-                src="./images/Marketing.jpg"
-                alt="Zdjęcie osoby Marketing"
-                width="270"
-                height="260"
-              />
+              <picture
+                ><source
+                  srcset="
+                    ./images/marketing480x1.jpg 350w,
+                    ./images/marketing480x2.jpg 480w
+                  "
+                  media="(minwidth:320px)"
+                  sizes="(minwidth:480px) 480px"
+                />
+                <source
+                  srcset="
+                    .images/marketing768x1.jpg  768w,
+                    .images/marketing768x2.jpg 1000w
+                  "
+                  media="(minwidth:768px)"
+                  sizes="(minwidth:1000px) 1000w"
+                />
+                <source
+                  srcset="
+                    .images/marketing1200x1.jpg 1200w,
+                    .images/marketing1200x2.jpg 2000w
+                  "
+                  media="(minwidth:1200px)"
+                  sizes="(minwidth:2000px) 2000px"
+                />
+                <img
+                  src="./images/marketing1200x1.jpg"
+                  alt="Zdjęcie osoby Marketing"
+                />
+              </picture>
               <h3 class="our-team__name">John Doe</h3>
               <ul class="media-section">
                 <li class="our-team__specialization">Marketing</li>
@@ -299,12 +397,30 @@
             </li>
 
             <li class="our-team__member">
-              <img
-                src="./images/UIDesigner.jpg"
-                alt="Zdjęcie osoby UI Designer"
-                width="270"
-                height="260"
-              />
+              <picture
+                ><source
+                  srcset="./images/ui480x1.jpg 350w, ./images/uig480x2.jpg 480w"
+                  media="(minwidth:320px)"
+                  sizes="(minwidth:480px) 480px"
+                />
+                <source
+                  srcset=".images/ui768x1.jpg 768w, .images/ui768x2.jpg 1000w"
+                  media="(minwidth:768px)"
+                  sizes="(minwidth:1000px) 1000w"
+                />
+                <source
+                  srcset="
+                    .images/ui1200x1.jpg 1200w,
+                    .images/ui1200x2.jpg 2000w
+                  "
+                  media="(minwidth:1200px)"
+                  sizes="(minwidth:2000px) 2000px"
+                />
+                <img
+                  src="./images/ui1200x1.jpg"
+                  alt="Zdjęcie osoby UI Designer"
+                />
+              </picture>
               <h3 class="our-team__name">John Doe</h3>
               <ul class="media-section">
                 <li class="our-team__specialization">UI Designer</li>
@@ -379,7 +495,7 @@
     </main>
     <footer class="page-footer">
       <section class="container page-footer__box">
-        <section class="our-zone">
+        <section class="our-zone page-footer__item">
           <a class="logo page-footer__logo" href="./index"
             ><span class="logo__color">Web</span>Studio</a
           >
@@ -396,7 +512,7 @@
             >
           </address>
         </section>
-        <section class="media-footer">
+        <section class="media-footer page-footer__item">
           <ul>
             <h4 class="media-footer__title">DOŁĄCZ DO NAS</h4>
           </ul>
@@ -431,25 +547,31 @@
           </ul>
         </section>
 
-        <form class="newsletter">
-          <div class="newsletter__box">
-            <label class="newsletter__label" for="email-newsletter"
-              >ZAPISZ SIĘ DO NEWSLETTERA</label
-            >
-            <input
-              class="newsletter__input"
-              type="email"
-              name="email-newsletter"
-              id="email-newsletter"
-              placeholder="E-mail"
-            />
-          </div>
-          <button class="newsletter__btn" type="submit">
-            Zapisz się<svg class="newsletter__btn--icon" width="24" height="24">
-              <use href="./images/icons.svg#icon-icon-send"></use>
-            </svg>
-          </button>
-        </form>
+        <section class="page-footer__item">
+          <form class="newsletter">
+            <div class="newsletter__box">
+              <label class="newsletter__label" for="email-newsletter"
+                >ZAPISZ SIĘ DO NEWSLETTERA</label
+              >
+              <input
+                class="newsletter__input"
+                type="email"
+                name="email-newsletter"
+                id="email-newsletter"
+                placeholder="E-mail"
+              />
+            </div>
+            <button class="newsletter__btn" type="submit">
+              Zapisz się<svg
+                class="newsletter__btn--icon"
+                width="24"
+                height="24"
+              >
+                <use href="./images/icons.svg#icon-icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </section>
       </section>
     </footer>
 

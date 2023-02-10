@@ -3,19 +3,28 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 480px;
+  margin: auto;
   &__title {
     margin-top: 0px;
     margin-bottom: 50px;
   }
+
   &__item {
     display: flex;
+    flex-wrap: wrap;
+    width: 480px;
     gap: 30px;
+
+    // display: flex;
+    // gap: 30px;
   }
   &__box {
+    flex-basis: calc((100% - (1 * 30px)) / 2);
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 170px;
+    width: 210px;
     height: 92px;
     border: 1px solid var(--border-clients-section__box);
     border-radius: 4px;
@@ -33,5 +42,28 @@
   }
   &__logo {
     fill: var(--clients-section__box);
+  }
+}
+@include tablet {
+  .clients-section {
+    width: 768px;
+    &__item {
+      width: 768px;
+    }
+    &__box {
+      flex-basis: calc((100% - (1 * 30px)) / 3);
+      width: 226px;
+    }
+  }
+}
+@include desktop {
+  .clients-section {
+    width: 1200px;
+    &__item {
+      width: 1200px;
+    }
+    &__box {
+      width: 170px;
+    }
   }
 }
