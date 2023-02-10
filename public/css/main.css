@@ -1040,19 +1040,31 @@ h2 {
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1200px) {
-  .page-footer__box {
-    width: 768px;
+  .page-footer {
+    margin: auto;
   }
-  .page-footer__box:not(:last-child) {
+  .page-footer__box {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-column-gap: 144px;
+       -moz-column-gap: 144px;
+            column-gap: 144px;
+    width: 768px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .newsletter {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .newsletter__input {
+    width: 450px;
   }
 }
 @media screen and (min-width: 1200px) {

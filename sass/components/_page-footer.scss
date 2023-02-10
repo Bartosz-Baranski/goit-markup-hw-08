@@ -161,19 +161,20 @@
 }
 @include tablet {
   .page-footer {
+    margin: auto;
     &__box {
-      // display: flex;
-      width: 768px;
-    }
-    &__box:not(:last-child) {
       display: flex;
-    }
-    &__item {
-      // flex-basis: calc((100% - (1 * 30px)) / 2);
+      flex-wrap: wrap;
+      column-gap: 144px;
+      width: 768px;
+      justify-content: center;
     }
   }
   .newsletter {
     flex-direction: column;
+    &__input {
+      width: 450px;
+    }
   }
 }
 @include desktop {
