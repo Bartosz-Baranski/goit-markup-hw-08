@@ -80,8 +80,9 @@
     padding-top: 16px;
   }
 }
-@media (min-width: 480px) {
+@media (max-width: 767px) {
   .our-team {
+    width: 480px;
     &__member {
       width: 450px;
     }
