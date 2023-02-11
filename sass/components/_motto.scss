@@ -1,6 +1,6 @@
 .motto-section {
   border: 1px;
-  max-width: 480px;
+  width: 480px;
   height: 400px;
   border-color: var(--logo-black);
   background-color: var(--baground);
@@ -8,7 +8,7 @@
       var(--gradient-motto),
       var(--gradient-motto)
     ),
-    url(../images/motto.jpg);
+    url(../images/motto1200x1.jpg);
   background-size: cover;
   margin: auto;
   &__inner {
@@ -43,14 +43,26 @@
     padding: 10px 41px 10px 42px;
   }
 }
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .motto-section {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(23, 26, 58, 0.4)
+      ),
+      url("../images/motto1200x2.jpg");
+  }
+}
 @include tablet {
   .motto-section {
-    max-width: 768px;
+    width: 768px;
+    margin: auto;
   }
 }
 @include desktop {
   .motto-section {
-    max-width: 1600px;
+    width: 1600px;
     height: 600px;
   }
 }

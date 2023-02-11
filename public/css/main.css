@@ -17,8 +17,7 @@ h2 {
 }
 
 .container {
-  width: 100vw;
-  padding-left: 0;
+  width: 480px;
   margin: 0 auto;
   height: auto;
 }
@@ -137,6 +136,7 @@ h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 450px;
   height: 60px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -164,12 +164,22 @@ h2 {
   color: var(--link-focus);
 }
 
+@media (min-width: 480px) {
+  .page-header {
+    width: 450px;
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 1200px) {
+  .container {
+    width: 768px;
+  }
   .page-header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    width: 738px;
     height: 80px;
+    margin: 0 auto;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -256,12 +266,10 @@ h2 {
     transition: var(--transition-active);
   }
 }
-@media (min-width: 480px) {
-  .page-header {
-    width: 450px;
-  }
-}
 @media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
   .section {
     padding: 94px 0px;
   }
@@ -269,6 +277,7 @@ h2 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    width: 1200px;
     height: 80px;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -354,12 +363,12 @@ h2 {
 }
 .motto-section {
   border: 1px;
-  max-width: 480px;
+  width: 480px;
   height: 400px;
   border-color: var(--logo-black);
   background-color: var(--baground);
-  background-image: -webkit-gradient(linear, left top, left bottom, from(var(--gradient-motto)), to(var(--gradient-motto))), url(../images/motto.jpg);
-  background-image: linear-gradient(var(--gradient-motto), var(--gradient-motto)), url(../images/motto.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(var(--gradient-motto)), to(var(--gradient-motto))), url(../images/motto1200x1.jpg);
+  background-image: linear-gradient(var(--gradient-motto), var(--gradient-motto)), url(../images/motto1200x1.jpg);
   background-size: cover;
   margin: auto;
 }
@@ -404,14 +413,21 @@ h2 {
   padding: 10px 41px 10px 42px;
 }
 
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .motto-section {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(23, 26, 58, 0.4))), url("../images/motto1200x2.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(23, 26, 58, 0.4)), url("../images/motto1200x2.jpg");
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .motto-section {
-    max-width: 768px;
+    width: 768px;
+    margin: auto;
   }
 }
 @media screen and (min-width: 1200px) {
   .motto-section {
-    max-width: 1600px;
+    width: 1600px;
     height: 600px;
   }
 }
@@ -569,7 +585,7 @@ h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100vw;
+  width: 480px;
   margin: auto;
   text-align: center;
 }
@@ -804,7 +820,7 @@ h2 {
 }
 .page-footer {
   background-color: var(--baground);
-  width: 100vw;
+  width: 480px;
 }
 .page-footer__logo {
   margin-bottom: 20px;
@@ -1593,6 +1609,7 @@ h2 {
   display: flex;
   outline: none;
   border: 0px;
+  padding: 0;
   background-color: var(--logo-footer);
   -webkit-box-pack: center;
       -ms-flex-pack: center;
