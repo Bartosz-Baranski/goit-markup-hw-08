@@ -1,6 +1,6 @@
 .page-footer {
   background-color: var(--baground);
-  width: 480px;
+  width: 100%;
   &__logo {
     margin-bottom: 20px;
     color: var(--logo-footer);
@@ -179,7 +179,6 @@
 }
 @include desktop {
   .page-footer {
-    width: 1600px;
     margin: 0 auto;
     &__box {
       justify-content: flex-start;

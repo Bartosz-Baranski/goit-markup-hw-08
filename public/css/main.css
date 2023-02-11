@@ -454,6 +454,7 @@ h2 {
   font-size: 14px;
   line-height: 1.172;
   margin: 0px;
+  text-align: center;
 }
 .rules-list__explain {
   color: var(--signatures);
@@ -508,6 +509,9 @@ h2 {
         -ms-flex-pack: center;
             justify-content: center;
     width: 270px;
+  }
+  .rules-list__title {
+    text-align: left;
   }
   .rules-list__icon {
     width: 270px;
@@ -586,7 +590,7 @@ h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 480px;
+  width: 100%;
   margin: auto;
   text-align: center;
 }
@@ -697,6 +701,9 @@ h2 {
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1200px) {
+  .our-team {
+    width: 100%;
+  }
   .our-team__box {
     width: 768px;
   }
@@ -723,7 +730,7 @@ h2 {
 }
 @media screen and (min-width: 1200px) {
   .our-team {
-    width: 1600px;
+    width: 100%;
   }
   .our-team__list {
     display: -webkit-box;
@@ -821,7 +828,7 @@ h2 {
 }
 .page-footer {
   background-color: var(--baground);
-  width: 480px;
+  width: 100%;
 }
 .page-footer__logo {
   margin-bottom: 20px;
@@ -1093,7 +1100,6 @@ h2 {
 }
 @media screen and (min-width: 1200px) {
   .page-footer {
-    width: 1600px;
     margin: 0 auto;
   }
   .page-footer__box {
