@@ -14,16 +14,15 @@ h2 {
   line-height: 1.172;
 }
 .container {
-  min-width: 320px;
-  max-width: 1170px;
-  padding: 0;
+  width: 100vw;
+  padding-left: 0;
   margin: 0 auto;
   height: auto;
 }
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding: 60px 15px 0px 15px;
 }
+
 .buttons {
   font-family: var(--main-font);
   color: var(main-text);
@@ -69,5 +68,20 @@ h2 {
     background-color: var(--link-focus);
     fill: var(--logo-footer);
     transition: var(--transition-active);
+  }
+}
+@media (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1200px;
   }
 }

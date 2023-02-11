@@ -3,8 +3,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 480px;
   margin: auto;
+  padding-bottom: 60px;
   &__title {
     margin-top: 0px;
     margin-bottom: 50px;
@@ -46,7 +46,6 @@
 }
 @include tablet {
   .clients-section {
-    width: 768px;
     &__item {
       width: 768px;
     }
@@ -58,7 +57,6 @@
 }
 @include desktop {
   .clients-section {
-    width: 1200px;
     &__item {
       width: 1200px;
     }

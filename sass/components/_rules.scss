@@ -8,7 +8,7 @@
 .rules-list {
   gap: 30px;
   &__item {
-    width: 480px;
+    width: 450px;
   }
   &__title {
     font-weight: 700;
@@ -26,7 +26,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 480px;
+    width: 450px;
     height: 120px;
     background-color: var(--buttons-background);
     border-radius: 4px;
@@ -35,9 +35,6 @@
   }
 }
 @include tablet {
-  .rules {
-    width: 768px;
-  }
   .rules-list {
     display: flex;
     flex-wrap: wrap;
@@ -54,10 +51,6 @@
   }
 }
 @include desktop {
-  .rules {
-    width: 1200px;
-    margin: auto;
-  }
   .rules-list {
     display: flex;
     justify-content: center;

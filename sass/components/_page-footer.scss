@@ -1,12 +1,12 @@
 .page-footer {
   background-color: var(--baground);
+  width: 100vw;
   &__logo {
     margin-bottom: 20px;
     color: var(--logo-footer);
   }
   &__box {
     display: flex;
-
     align-items: center;
     gap: 60px;
     padding: 60px 0px;
@@ -179,11 +179,12 @@
 }
 @include desktop {
   .page-footer {
+    width: 1600px;
+    margin: 0 auto;
     &__box {
       justify-content: flex-start;
       align-items: center;
       gap: 70px;
-      width: 1200px;
     }
   }
   .our-zone {

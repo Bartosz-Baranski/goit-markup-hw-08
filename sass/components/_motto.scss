@@ -1,6 +1,6 @@
 .motto-section {
   border: 1px;
-  width: 480px;
+  max-width: 480px;
   height: 400px;
   border-color: var(--logo-black);
   background-color: var(--baground);
@@ -9,7 +9,6 @@
       var(--gradient-motto)
     ),
     url(../images/motto.jpg);
-  // max-width: 1600px;
   background-size: cover;
   margin: auto;
   &__inner {
@@ -46,11 +45,12 @@
 }
 @include tablet {
   .motto-section {
-    width: 768px;
+    max-width: 768px;
   }
 }
 @include desktop {
   .motto-section {
-    width: 1200px;
+    max-width: 1600px;
+    height: 600px;
   }
 }

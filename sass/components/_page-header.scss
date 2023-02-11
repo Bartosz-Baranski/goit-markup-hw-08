@@ -1,6 +1,5 @@
 .page-header {
   display: flex;
-  width: 480px;
   height: 60px;
   justify-content: space-between;
   align-items: center;
@@ -26,7 +25,6 @@
 @include tablet {
   .page-header {
     display: flex;
-    width: 767px;
     height: 80px;
     justify-content: space-between;
     align-items: center;
@@ -92,10 +90,17 @@
     }
   }
 }
+@media (min-width: 480px) {
+  .page-header {
+    width: 450px;
+  }
+}
 @include desktop {
+  .section {
+    padding: 94px 0px;
+  }
   .page-header {
     display: flex;
-    width: 1600px;
     height: 80px;
     justify-content: space-between;
     align-items: center;
