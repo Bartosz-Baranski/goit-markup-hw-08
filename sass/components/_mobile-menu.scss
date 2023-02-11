@@ -16,7 +16,7 @@
   justify-content: space-between;
   position: relative;
   padding: 48px 40px;
-  // max-width: 480px;
+
   &__btn-open {
     display: flex;
     outline: none;
@@ -25,9 +25,6 @@
     background-color: var(--logo-footer);
     justify-content: center;
     align-items: center;
-    // position: absolute;
-    // top: 10px;
-    // right: 10px;
   }
   &__icon-open:hover,
   &__icon-open:focus {
@@ -58,9 +55,7 @@
   &__list {
     display: flex;
     flex-direction: column;
-    // padding-top: 302px;
     gap: 32px;
-    // margin-bottom: 302px;
   }
   &__link {
     font-family: var(--main-font);

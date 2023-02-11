@@ -138,6 +138,7 @@ h2 {
   display: flex;
   width: 450px;
   height: 60px;
+  margin: auto;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -365,6 +366,7 @@ h2 {
   border: 1px;
   width: 480px;
   height: 400px;
+  margin: auto;
   border-color: var(--logo-black);
   background-color: var(--baground);
   background-image: -webkit-gradient(linear, left top, left bottom, from(var(--gradient-motto)), to(var(--gradient-motto))), url(../images/motto1200x1.jpg);
@@ -422,7 +424,6 @@ h2 {
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .motto-section {
     width: 768px;
-    margin: auto;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1143,10 +1144,9 @@ h2 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 40px;
   position: fixed;
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
   background-color: var(--logo-footer);
   border-radius: 4px;
   -webkit-box-shadow: 0px 1px 3px var(--shadow-first-btn-selection), 0px 1px 1px var(--shadow-modal-second), 0px 2px 1px var(--shadow-modal-third);
@@ -1198,8 +1198,8 @@ h2 {
       -ms-flex-align: center;
           align-items: center;
   position: absolute;
-  top: 17px;
-  right: 17px;
+  top: 8px;
+  right: 8px;
   width: 30px;
   height: 30px;
   border-radius: 50px;
@@ -1226,6 +1226,7 @@ h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 40px;
 }
 .modal-form__fildset {
   display: -webkit-box;
@@ -1244,11 +1245,11 @@ h2 {
 }
 .modal-form__fildset-title {
   display: block;
-  width: 448px;
+  width: 370px;
   text-align: center;
   font-family: var(--main-font);
   font-size: 20px;
-  line-height: 1.172;
+  line-height: 1.5;
   font-weight: 700;
   padding: 0px;
   margin: 0px 0px 12px 0px;
@@ -1263,7 +1264,7 @@ h2 {
           flex-direction: column;
   gap: 2px;
   position: relative;
-  width: 448px;
+  width: 370px;
 }
 .modal-form__label {
   display: -webkit-box;
@@ -1284,7 +1285,7 @@ h2 {
 .modal-form__input {
   border: 1px solid var(--border-form-modal);
   border-radius: 4px;
-  width: 406px;
+  width: 328px;
   height: 40px;
   font-family: var(--main-font);
   font-weight: 400;
@@ -1309,7 +1310,7 @@ h2 {
   border: 1px solid var(--border-form-modal);
   border-radius: 4px;
   outline: none;
-  width: 416px;
+  width: 338px;
   height: 96px;
   resize: none;
   font-family: var(--main-font);
@@ -1364,7 +1365,7 @@ h2 {
 .modal-form__check-label {
   font-family: var(--main-font);
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.71;
   color: var(--signatures);
   margin-top: 20px;
@@ -1430,6 +1431,32 @@ h2 {
           box-shadow: 8px 8px 6px greenyellow;
 }
 
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
+  .modal__icon-close {
+    top: 17px;
+    right: 17px;
+  }
+  .modal-form__fildset-title {
+    line-height: 1.172;
+    width: 448px;
+  }
+  .modal-form__item {
+    width: 448px;
+  }
+  .modal-form__input {
+    width: 406px;
+  }
+  .modal-form__textarea {
+    width: 416px;
+  }
+  .modal-form v {
+    font-size: 14px;
+  }
+}
 .page-header--underline {
   border-bottom: 1px solid var(--navi-border);
 }

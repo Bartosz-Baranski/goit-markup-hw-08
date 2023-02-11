@@ -3,10 +3,9 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 40px;
   position: fixed;
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
   background-color: var(--logo-footer);
   border-radius: 4px;
   box-shadow: 0px 1px 3px var(--shadow-first-btn-selection),
@@ -40,8 +39,8 @@
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 17px;
-    right: 17px;
+    top: 8px;
+    right: 8px;
     width: 30px;
     height: 30px;
     border-radius: 50px;
@@ -60,6 +59,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 40px;
   &__fildset {
     display: flex;
     flex-direction: column;
@@ -69,11 +69,11 @@
     padding: 0px;
     &-title {
       display: block;
-      width: 448px;
+      width: 370px;
       text-align: center;
       font-family: var(--main-font);
       font-size: 20px;
-      line-height: 1.172;
+      line-height: 1.5;
       font-weight: 700;
       padding: 0px;
       margin: 0px 0px 12px 0px;
@@ -84,7 +84,7 @@
     flex-direction: column;
     gap: 2px;
     position: relative;
-    width: 448px;
+    width: 370px;
   }
   &__label {
     display: flex;
@@ -100,7 +100,7 @@
   &__input {
     border: 1px solid var(--border-form-modal);
     border-radius: 4px;
-    width: 406px;
+    width: 328px;
     height: 40px;
     font-family: var(--main-font);
     font-weight: 400;
@@ -125,7 +125,7 @@
     border: 1px solid var(--border-form-modal);
     border-radius: 4px;
     outline: none;
-    width: 416px;
+    width: 338px;
     height: 96px;
     resize: none;
     font-family: var(--main-font);
@@ -152,7 +152,7 @@
   &__check-label {
     font-family: var(--main-font);
     font-weight: 400;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.71;
     color: var(--signatures);
     margin-top: 20px;
@@ -204,6 +204,36 @@
       transition: var(--transition-active);
       cursor: pointer;
       box-shadow: 8px 8px 6px greenyellow;
+    }
+  }
+}
+@include desktop {
+  .modal {
+    width: 528px;
+    height: 581px;
+    &__icon-close {
+      top: 17px;
+      right: 17px;
+    }
+  }
+  .modal-form {
+    &__fildset {
+      &-title {
+        line-height: 1.172;
+        width: 448px;
+      }
+    }
+    &__item {
+      width: 448px;
+    }
+    &__input {
+      width: 406px;
+    }
+    &__textarea {
+      width: 416px;
+    }
+    v {
+      font-size: 14px;
     }
   }
 }

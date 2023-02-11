@@ -2,6 +2,7 @@
   border: 1px;
   width: 480px;
   height: 400px;
+  margin: auto;
   border-color: var(--logo-black);
   background-color: var(--baground);
   background-image: linear-gradient(
@@ -57,7 +58,6 @@
 @include tablet {
   .motto-section {
     width: 768px;
-    margin: auto;
   }
 }
 @include desktop {
