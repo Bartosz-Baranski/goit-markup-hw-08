@@ -3,6 +3,7 @@ body {
   color: var(--main-text);
   padding: 0px;
   margin: 0px;
+  position: relative;
 }
 ul {
   list-style-type: none;
@@ -14,7 +15,7 @@ h2 {
   line-height: 1.172;
 }
 .container {
-  width: 480px;
+  max-width: 1600px;
   margin: 0 auto;
   height: auto;
 }
