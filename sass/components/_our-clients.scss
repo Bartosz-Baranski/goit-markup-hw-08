@@ -12,15 +12,10 @@
 
   &__item {
     display: flex;
-    flex-wrap: wrap;
-    width: 480px;
-    gap: 30px;
-
-    // display: flex;
-    // gap: 30px;
+    flex-direction: column;
+    gap: 15px;
   }
   &__box {
-    flex-basis: calc((100% - (1 * 30px)) / 2);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -44,12 +39,30 @@
     fill: var(--clients-section__box);
   }
 }
+@include phone {
+  .clients-section {
+    &__item {
+      width: 480px;
+      flex-wrap: wrap;
+      flex-direction: row;
+      gap: 30px;
+    }
+    &__box {
+      display: flex;
+      flex-basis: calc((100% - (1 * 30px)) / 2);
+    }
+  }
+}
 @include tablet {
   .clients-section {
     &__item {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
       width: 768px;
     }
     &__box {
+      display: flex;
       flex-basis: calc((100% - (1 * 30px)) / 3);
       width: 226px;
     }
@@ -59,6 +72,7 @@
   .clients-section {
     &__item {
       width: 1200px;
+      flex-direction: row;
     }
     &__box {
       width: 170px;

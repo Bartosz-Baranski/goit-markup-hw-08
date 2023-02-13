@@ -6,7 +6,6 @@
   align-items: center;
   width: 100%;
   padding-bottom: 60px;
-
   text-align: center;
   &__title {
     display: block;
@@ -26,8 +25,7 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    width: 450px;
-    height: 622px;
+
     background-color: var(--logo-footer);
     box-shadow: 0 4px 4px var(--shadow-teamat);
   }
@@ -73,6 +71,7 @@
 .media-section {
   display: block;
   padding: 0px;
+  padding-bottom: 24px;
   &__list {
     display: flex;
     justify-content: center;
@@ -80,11 +79,12 @@
     padding-top: 16px;
   }
 }
-@media (max-width: 767px) {
+@include phone {
   .our-team {
     width: 100%;
     &__member {
       width: 450px;
+      height: 622px;
     }
   }
 }

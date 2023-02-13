@@ -1,14 +1,11 @@
 .rules {
   display: flex;
   justify-content: center;
-  padding: 60px 0px;
 }
 
 .rules-list {
   gap: 30px;
-  &__item {
-    width: 450px;
-  }
+
   &__title {
     font-weight: 700;
     font-size: 14px;
@@ -26,12 +23,22 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 450px;
+
     height: 120px;
     background-color: var(--buttons-background);
     border-radius: 4px;
     margin: 0px;
     margin-bottom: 30px;
+  }
+}
+@include phone {
+  .rules-list {
+    &__item {
+      width: 450px;
+    }
+    &__icon {
+      width: 450px;
+    }
   }
 }
 @include tablet {

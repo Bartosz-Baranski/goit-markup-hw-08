@@ -1,6 +1,7 @@
 .page-footer {
   display: flex;
   justify-content: center;
+
   background-color: var(--baground);
   width: 100%;
   &__logo {
@@ -9,6 +10,7 @@
   }
   &__box {
     display: flex;
+    flex-direction: column;
     align-items: center;
     gap: 60px;
     padding: 60px 0px;
@@ -83,6 +85,7 @@
 
 .newsletter {
   display: flex;
+  flex-direction: column;
   gap: 12px;
   align-items: center;
   &__box {
@@ -99,7 +102,6 @@
     margin: 0px;
   }
   &__input {
-    width: 358px;
     height: 50px;
     border: 1px solid var(--newsletter-border);
     border-radius: 4px;
@@ -149,16 +151,18 @@
     }
   }
 }
-@media (max-width: 768px) {
+@include phone {
   .page-footer {
     width: 100%;
     &__box {
-      flex-direction: column;
+      display: flex;
       justify-content: center;
     }
   }
   .newsletter {
-    flex-direction: column;
+    &__input {
+      width: 358px;
+    }
   }
 }
 @include tablet {
@@ -166,6 +170,7 @@
     margin: auto;
     &__box {
       display: flex;
+      flex-direction: unset;
       flex-wrap: wrap;
       column-gap: 144px;
       width: 768px;
@@ -183,7 +188,8 @@
   .page-footer {
     margin: 0 auto;
     &__box {
-      justify-content: flex-start;
+      flex-direction: row;
+      justify-content: center;
       align-items: center;
       gap: 70px;
     }

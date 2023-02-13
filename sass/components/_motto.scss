@@ -1,8 +1,10 @@
 .motto-section {
   border: 1px;
-  width: 480px;
-  height: 400px;
-
+  width: 100%;
+  // height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-color: var(--logo-black);
   background-color: var(--baground);
   background-image: linear-gradient(
@@ -23,8 +25,9 @@
   &__title {
     color: var(--logo-footer);
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.364;
+    font-size: 26px;
+    line-height: 1.62;
+
     display: block;
     margin: 0px;
     text-align: center;
@@ -55,6 +58,12 @@
       url("../images/motto1200x2.jpg");
   }
 }
+@include phone {
+  .motto-section {
+    width: 480px;
+    height: 400px;
+  }
+}
 @include tablet {
   .motto-section {
     width: 768px;
@@ -64,5 +73,9 @@
   .motto-section {
     width: 100%;
     height: 600px;
+    &__title {
+      font-size: 44px;
+      line-height: 1.364;
+    }
   }
 }
