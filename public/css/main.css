@@ -443,6 +443,7 @@ img {
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .motto-section {
     width: 768px;
+    height: 400px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -869,6 +870,7 @@ img {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     width: 768px;
+    gap: 30px;
   }
   .clients-section__box {
     display: -webkit-box;
