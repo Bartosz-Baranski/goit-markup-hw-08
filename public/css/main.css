@@ -87,6 +87,12 @@ h2 {
   transition: var(--transition-active);
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 @media (min-width: 480px) {
   .container {
     width: 480px;
@@ -538,7 +544,7 @@ h2 {
     margin-top: 0px;
     margin-bottom: 50px;
   }
-  .our-work__img {
+  .our-work__list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -549,6 +555,10 @@ h2 {
     padding-left: 0px;
     margin: 0px;
     gap: 30px;
+  }
+  .our-work__img {
+    width: 370px;
+    height: 294px;
   }
   .our-work__figcaption {
     display: -webkit-box;
@@ -564,7 +574,7 @@ h2 {
     height: 70px;
     background-color: var(--box-description-bgc);
     position: absolute;
-    bottom: 4px;
+    bottom: 0;
   }
   .our-work__description {
     font-size: 14px;
@@ -589,6 +599,7 @@ h2 {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
+  padding-bottom: 60px;
   text-align: center;
 }
 .our-team__title {

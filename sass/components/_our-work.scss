@@ -11,13 +11,17 @@
       margin-top: 0px;
       margin-bottom: 50px;
     }
-    &__img {
+    &__list {
       display: flex;
       justify-content: space-between;
       position: relative;
       padding-left: 0px;
       margin: 0px;
       gap: 30px;
+    }
+    &__img {
+      width: 370px;
+      height: 294px;
     }
     &__figcaption {
       display: flex;
@@ -27,7 +31,7 @@
       height: 70px;
       background-color: var(--box-description-bgc);
       position: absolute;
-      bottom: 4px;
+      bottom: 0;
     }
     &__description {
       font-size: 14px;
