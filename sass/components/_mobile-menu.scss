@@ -15,7 +15,7 @@
   flex-direction: column;
   justify-content: space-between;
   position: relative;
-  padding: 48px 40px;
+  padding: 48px 0;
 
   &__btn-open {
     display: flex;
@@ -102,6 +102,11 @@
     font-weight: 500;
     color: var(--link-focus);
     text-decoration: none;
+  }
+}
+@include phone {
+  .mobile-nav {
+    padding: 48px 40px;
   }
 }
 .mobile-menu.is-open {

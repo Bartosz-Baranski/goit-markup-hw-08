@@ -1718,7 +1718,7 @@ img {
       -ms-flex-pack: justify;
           justify-content: space-between;
   position: relative;
-  padding: 48px 40px;
+  padding: 48px 0;
 }
 .mobile-nav__btn-open {
   display: -webkit-box;
@@ -1828,6 +1828,11 @@ img {
   text-decoration: none;
 }
 
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .mobile-nav {
+    padding: 48px 40px;
+  }
+}
 .mobile-menu.is-open {
   -webkit-transform: translateX(0);
           transform: translateX(0);
