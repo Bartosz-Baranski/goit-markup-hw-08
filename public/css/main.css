@@ -886,6 +886,7 @@ img {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    gap: 30px;
   }
   .clients-section__box {
     width: 170px;
@@ -1110,6 +1111,7 @@ img {
   border-radius: 4px;
   font-weight: 700;
   font-size: 16px;
+  cursor: pointer;
   line-height: 1.875;
   color: var(--logo-footer);
   -webkit-box-shadow: 0px 4px 4px var(--shadow-teamat);
@@ -1122,10 +1124,8 @@ img {
   transition: transform var(--transition-active);
   transition: transform var(--transition-active), -webkit-transform var(--transition-active);
 }
-.newsletter__btn:hover {
-  cursor: pointer;
-}
-.newsletter__btn:hover .newsleter__btn--icon {
+
+.newsleter__btn:hover .newsleter__btn--icon {
   -webkit-transform: rotate(360deg);
           transform: rotate(360deg);
 }
@@ -1215,9 +1215,16 @@ img {
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
   .newsletter__label {
     text-align: start;
+  }
+  .newsletter__input {
+    width: 358px;
   }
 }
 .modal {
@@ -1235,8 +1242,6 @@ img {
       -ms-flex-pack: center;
           justify-content: center;
   position: fixed;
-  width: 450px;
-  height: 609px;
   background-color: var(--logo-footer);
   border-radius: 4px;
   -webkit-box-shadow: 0px 1px 3px var(--shadow-first-btn-selection), 0px 1px 1px var(--shadow-modal-second), 0px 2px 1px var(--shadow-modal-third);
@@ -1335,7 +1340,6 @@ img {
 }
 .modal-form__fildset-title {
   display: block;
-  width: 370px;
   text-align: center;
   font-family: var(--main-font);
   font-size: 20px;
@@ -1354,7 +1358,6 @@ img {
           flex-direction: column;
   gap: 2px;
   position: relative;
-  width: 370px;
 }
 .modal-form__label {
   display: -webkit-box;
@@ -1375,7 +1378,6 @@ img {
 .modal-form__input {
   border: 1px solid var(--border-form-modal);
   border-radius: 4px;
-  width: 328px;
   height: 40px;
   font-family: var(--main-font);
   font-weight: 400;
@@ -1400,7 +1402,6 @@ img {
   border: 1px solid var(--border-form-modal);
   border-radius: 4px;
   outline: none;
-  width: 338px;
   height: 96px;
   resize: none;
   font-family: var(--main-font);
@@ -1521,6 +1522,24 @@ img {
           box-shadow: 8px 8px 6px greenyellow;
 }
 
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+  }
+  .modal-form__fildset__title {
+    width: 370px;
+  }
+  .modal-form__item {
+    width: 370px;
+  }
+  .modal-form__input {
+    width: 328px;
+  }
+  .modal-form__textarea {
+    width: 338px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .modal {
     width: 528px;
@@ -1543,7 +1562,7 @@ img {
   .modal-form__textarea {
     width: 416px;
   }
-  .modal-form v {
+  .modal-form__check-label {
     font-size: 14px;
   }
 }
@@ -1718,7 +1737,7 @@ img {
       -ms-flex-pack: justify;
           justify-content: space-between;
   position: relative;
-  padding: 48px 0;
+  padding: 48px 5px;
 }
 .mobile-nav__btn-open {
   display: -webkit-box;
@@ -1813,11 +1832,11 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 10px;
+  gap: 5px;
 }
 .mobile-nav__media-item:not(:last-child) {
   border-right: 1px solid var(--border-form-modal);
-  padding-right: 10px;
+  padding-right: 5px;
 }
 .mobile-nav__media-link {
   font-family: var(--main-font);
@@ -1831,6 +1850,12 @@ img {
 @media screen and (min-width: 480px) and (max-width: 768px) {
   .mobile-nav {
     padding: 48px 40px;
+  }
+  .mobile-nav__media {
+    gap: 10px;
+  }
+  .mobile-nav__media-item:not(:last-child) {
+    padding-right: 10px;
   }
 }
 .mobile-menu.is-open {
